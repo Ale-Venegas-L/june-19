@@ -1,9 +1,4 @@
 contacts = []
-
-def Validator_T(x):
-    while len(x) < 2:
-        x = input
-
 def contactx():
     print("Agrega contacto: ")
     name = input("Nombre: ")
@@ -13,3 +8,12 @@ def contactx():
                "Cellphone": cellphone,
                "E-Mail" : email}
     contacts.append(contact)
+
+def read():
+    if len(contacts) == 0:
+        print(f"Wuaja no tiene amigos q luser\nIngrese uno en la primera opción")
+    else:
+        for c in contacts:
+            print(f"Nombre: {c["Name"]}")
+            print(f"Teléfono: {c["Cellphone"]}")
+            print(f"Correo: {c["E-Mail"]}")

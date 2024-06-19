@@ -9,15 +9,15 @@ while True:
     print("3. Exportar CVS")
     print("4. Salir")
     print("Ingresa opción")
-    try:
-        opc = int(input)
-    except:
-        print("Debe ingresar un número!")
+    opc = int(input())
     if opc == 1:
-        print("Soy un cacahuate!!!!")
+       os.system("cls")
+       functions.contactx()
     elif opc == 2:
-        print("MEMBRISHO!")
+        os.system("cls")
+        functions.read()
     elif opc == 3:
+        os.system("cls")
         print("NYAAAA :3")
     else:
         pass
